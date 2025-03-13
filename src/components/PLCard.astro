@@ -1,0 +1,36 @@
+---
+const { artist, album } = Astro.props;
+---
+
+<article>
+  <div class="album">
+    <img src={album} alt="" />
+  </div>
+  <div class="artist">{artist}</div>
+</article>
+
+<style>
+  article {
+    display: flex;
+    height: 50px;
+    width: 100%;
+  }
+  .album {
+    position: relative;
+    aspect-ratio: 1/1;
+    height: 100%;
+    img {
+      width: 100%;
+      border-radius: 5px 0 0 5px;
+      box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.544);
+    }
+  }
+  .artist {
+    display: flex;
+    padding: 0.7rem;
+    background-color: rgb(65, 65, 65);
+    align-items: center;
+    width: 100%;
+    border-radius: 0 5px 5px 0;
+  }
+</style>

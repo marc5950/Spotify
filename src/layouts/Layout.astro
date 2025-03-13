@@ -1,7 +1,7 @@
 ---
 import "../styles/global.css";
 const { titel } = Astro.props;
-import Navigation from "../components/Navigation.astro";
+import Border from "../components/Border.astro";
 ---
 
 <!doctype html>
@@ -12,7 +12,7 @@ import Navigation from "../components/Navigation.astro";
     <title>{titel}</title>
   </head>
   <body>
-    <Navigation />
+    <Border />
     <slot />
   </body>
 </html>

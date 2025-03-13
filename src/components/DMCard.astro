@@ -1,0 +1,66 @@
+---
+const { DMnr, artist, album, color } = Astro.props;
+---
+
+<article>
+  <div class="album">
+    <img src={album} alt="" />
+    <div class="label">
+      <div class={"text " + color}>DailyMix</div><div class={"text " + color}>
+        {DMnr}
+      </div>
+    </div>
+  </div>
+  <div class="artist">{artist}</div>
+</article>
+
+<style>
+  article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    width: max-content;
+  }
+  .label {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    width: 100%;
+    align-items: end;
+    margin-top: -35px;
+  }
+  .album {
+    display: flex;
+    flex-direction: column;
+    aspect-ratio: 1/1;
+    width: 200px;
+    img {
+      border-radius: 5px;
+      box-shadow: 2px 2px 5px black;
+    }
+  }
+  .text {
+    font-size: 1.5rem;
+    color: black;
+    padding: 2px;
+  }
+  .aqua {
+    background-color: aqua;
+  }
+  .yellow {
+    background-color: yellow;
+  }
+  .red {
+    background-color: red;
+  }
+  .artist {
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    align-items: start;
+    font-size: 1.25rem;
+    color: whitesmoke;
+  }
+</style>

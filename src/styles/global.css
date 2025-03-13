@@ -1,3 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-	background-color: orange;
+  background: linear-gradient(
+    180deg,
+    rgba(33, 33, 33, 1) 50%,
+    rgba(18, 18, 18, 1) 100%
+  );
+}
+
+--root {
+  --primary: #1db954;
+  --secondary: #212121;
+  --tertiary: #121212;
+  --quaternary: #535353;
+  --quinary: #b3b3b3;
 }
