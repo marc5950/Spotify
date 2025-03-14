@@ -3,15 +3,17 @@ const { DMnr, artist, album, color } = Astro.props;
 ---
 
 <article>
-  <div class="album">
+  <figure class="album">
     <img src={album} alt="" />
-    <div class="label">
-      <div class={"text " + color}>DailyMix</div><div class={"text " + color}>
-        {DMnr}
+    <figurecaption class="label">
+      <div class={"text " + color}><p>DailyMix</p></div><div
+        class={"text " + color}
+      >
+        <p>{DMnr}</p>
       </div>
-    </div>
-  </div>
-  <div class="artist">{artist}</div>
+    </figurecaption>
+  </figure>
+  <div class="artist"><p>{artist}</p></div>
 </article>
 
 <style>
@@ -22,6 +24,7 @@ const { DMnr, artist, album, color } = Astro.props;
     align-items: center;
     gap: 0.5rem;
     width: max-content;
+    padding-bottom: 15px;
   }
   .label {
     display: flex;

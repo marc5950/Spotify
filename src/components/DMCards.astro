@@ -3,7 +3,7 @@ import DMCard from "./DMCard.astro";
 ---
 
 <div class="DMCards">
-  <h2>Specielt til dig</h2>
+  <slot />
   <div class="Cards">
     <DMCard
       DMnr="01"
@@ -49,11 +49,12 @@ import DMCard from "./DMCard.astro";
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding: 3rem 1rem;
+    padding: 85px 10px 15px 80px;
     color: whitesmoke;
   }
   .Cards {
     display: flex;
     gap: 1.5rem;
+    overflow-x: scroll;
   }
 </style>

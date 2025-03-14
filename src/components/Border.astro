@@ -2,7 +2,7 @@
 
 ---
 
-<div class="border">
+<div class="bordertop">
   <img src="" alt="LOGO" />
   <div class="mid">
     <img src="" alt="home" />
@@ -13,13 +13,31 @@
   <img src="" alt="profile" />
 </div>
 
+<div class="borderleft">
+  <img src="" alt="album" />
+</div>
+
 <style>
-  .border {
+  .borderleft {
+    position: fixed;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 1rem;
+    width: 70px;
+    height: 100vh;
+    background-color: black;
+  }
+  .bordertop {
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
     background-color: black;
+    width: 100%;
+    height: 70px;
+    z-index: 1;
   }
   .mid {
     display: flex;
