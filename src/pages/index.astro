@@ -5,7 +5,15 @@ import PLCards from "../components/PLCards.astro";
 ---
 
 <Layout titel="Forside">
-  <PLCards />
-  <DMCards><h2>Specielt til dig</h2></DMCards>
-  <DMCards><h2>Se indhold, som er udvalgt til dig</h2></DMCards>
+  <div>
+    <PLCards />
+    <DMCards><h2>Specielt til dig</h2></DMCards>
+    <DMCards><h2>Se indhold, som er udvalgt til dig</h2></DMCards>
+  </div>
 </Layout>
+
+<style>
+  div {
+    padding: 70px 0 0 70px;
+  }
+</style>
